@@ -39,4 +39,3 @@ def hello_world():
     #to put in my name follow the URL
     #http://127.0.0.1:5000/hello?name=Alexa
 
-    
