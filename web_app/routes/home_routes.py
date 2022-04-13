@@ -8,20 +8,20 @@ home_routes = Blueprint("home_routes", __name__)
 @home_routes.route("/home")
 def index():
     print("HOME...")
-    return "Welcome Home"
-    #return render_template("home.html")
+    #return "Welcome Home"
+    return render_template("home.html")
 
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
-    return "About Me"
-    #return render_template("about.html")
+    #return "About Me"
+    return render_template("about.html")
 
 @home_routes.route("/another")
 def another():
     print("ANOTHER...")
-    return "Here is another page"
-    #return render_template("about.html")
+    #return "Here is another page"
+    return render_template("about.html")
 
 @home_routes.route("/hello")
 def hello_world():
@@ -33,8 +33,8 @@ def hello_world():
     #if no "name" parameter specified, use a default value
     name = request.args.get("name") or "World"
     message = f"Hello, {name}!"
-    return message
-    #return render_template("hello.html", message=message)
+    #return message
+    return render_template("hello.html", message=message)
     
     #to put in my name follow the URL
     #http://127.0.0.1:5000/hello?name=Alexa
