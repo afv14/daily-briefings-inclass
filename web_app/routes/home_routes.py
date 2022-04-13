@@ -34,7 +34,7 @@ def hello_world():
     name = request.args.get("name") or "World"
     message = f"Hello, {name}!"
     #return message
-    return render_template("hello.html", message=message)
+    return render_template("hello.html", message=message, other="YOLO")
     
     #to put in my name follow the URL
     #http://127.0.0.1:5000/hello?name=Alexa
