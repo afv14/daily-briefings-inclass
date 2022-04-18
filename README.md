@@ -96,4 +96,7 @@ Follow the deployment instructions to deploy the app to a remote server and sche
 ```sh
 FLASK_APP=web_app flask run
 ```
-
+## url to visit the site
+```sh
+https://stark-atoll-16369.herokuapp.com/
+```
